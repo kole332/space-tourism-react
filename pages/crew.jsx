@@ -3,13 +3,14 @@ import React from "react";
 export default function Crew() {
   React.useEffect(() => {
     document.querySelector("body").classList.value = "crew";
-    document
-      .querySelector('[aria-selected="crew"]')
-      .setAttribute("aria-selected", true);
+    const active = document.querySelector('[aria-selected="crew"]');
+    if (active) {
+      active.setAttribute("aria-selected", true);
+    }
   }, []);
 
   return (
-    <div>
+    <div className="px-8">
       <h1>Hello from Crew!</h1>
     </div>
   );

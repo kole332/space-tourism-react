@@ -18,6 +18,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    marginBlock: {
+      1: "1rem",
+      2: "2rem",
+      4: "4rem",
+      8: "8rem",
+    },
+
     extend: {
       // Custom Screen sizes
       screens: {
@@ -85,13 +92,26 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({ addVariant }) {
+    plugin(function ({ addVariant, addUtilities, matchUtilities, theme }) {
       addVariant("optional", "&:optional");
       addVariant("hocus", ["&:hover", "&:focus"]);
       addVariant("supports-grid", "@supports (display: grid)");
       addVariant("aria-expanded", ['&[aria-expanded="true"]']);
       addVariant("aria-selected", ['&[aria-selected="true"]']);
       addVariant("data-visible", ['&[data-visible="true"]']);
+      addUtilities({
+        ".content-empty": {
+          content: "''",
+        },
+      });
+      matchUtilities(
+        {
+          "margin-block": (value) => ({
+            marginBlock: value,
+          }),
+        },
+        { values: theme("marginBlock") }
+      );
     }),
   ],
 };

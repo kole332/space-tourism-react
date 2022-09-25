@@ -3,9 +3,10 @@ import React from "react";
 function Destination() {
   React.useEffect(() => {
     document.querySelector("body").classList.value = "destination";
-    document
-      .querySelector('[aria-selected="destination"]')
-      .setAttribute("aria-selected", true);
+    const active = document.querySelector('[aria-selected="destination"]');
+    if (active) {
+      active.setAttribute("aria-selected", true);
+    }
   }, []);
 
   return (

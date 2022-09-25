@@ -20,6 +20,21 @@
   }
 
   .primary-header::after {
-    @apply content-[''] block relative h-[1px] w-full -mr-10 bg-clr-white bg-opacity-25 order-1;
+    @apply content-empty block relative h-[1px] w-full -mr-10 bg-clr-white bg-opacity-25 order-1;
   }
+
+  .large-btn {
+    @apply text-[2rem] relative inline-grid z-[1] place-items-center py-0 px-[2em] rounded-[50%] aspect-[1] outline-none margin-block-2;
+  }
+
+  .large-btn::after {
+    @apply content-empty absolute z-[-1] bg-clr-white bg-opacity-[.15] w-full h-full rounded-[50%] opacity-0 outline-none;
+    transition: opacity 500ms linear, transform 500ms ease-in-out;
+  }
+
+  /* .large-btn:hover::after,
+  .large-btn:focus::after {
+    opacity: 1;
+    transform: scale(1.5);
+  } */
 }
