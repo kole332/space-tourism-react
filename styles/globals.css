@@ -7,3 +7,19 @@
   --clr-light: 231 77% 90%;
   --clr-white: 0 0% 100%;
 }
+
+@layer base {
+  body {
+    @apply main-clr bg-clr-dark min-h-screen text-clr-white;
+  }
+}
+
+@layer components {
+  .home {
+    @apply bg-home-mobile sm:bg-home-tablet md:bg-home-desktop bg-no-repeat bg-[center_bottom] sm:bg-[center_center] bg-cover;
+  }
+
+  .primary-header::after {
+    @apply content-[''] block relative h-[1px] w-full -mr-10 bg-clr-white bg-opacity-25 order-1;
+  }
+}

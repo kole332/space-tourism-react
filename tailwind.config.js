@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
+const plugin = require("tailwindcss/plugin");
 
 function withOpacityValue(variable) {
   return ({ opacityValue }) => {
@@ -18,17 +19,43 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // Custom Screen sizes
+      screens: {
+        m2xl: { max: "1535px" },
+        // => @media (max-width: 1535px) { ... }
+
+        mxl: { max: "1279px" },
+        // => @media (max-width: 1279px) { ... }
+
+        mlg: { max: "1023px" },
+        // => @media (max-width: 1023px) { ... }
+
+        mmd: { max: "767px" },
+        // => @media (max-width: 767px) { ... }
+
+        msm: { max: "639px" },
+        // => @media (max-width: 639px) { ... }
+      },
+
       fontFamily: {
         sans: ["Barlow", ...defaultTheme.fontFamily.sans],
         serif: ["Bellefair", ...defaultTheme.fontFamily.serif],
         "sans-cond": ["Barlow Condensed", ...defaultTheme.fontFamily.sans],
       },
+
       colors: {
         "clr-dark": withOpacityValue("--clr-dark"),
         "clr-light": withOpacityValue("--clr-light"),
         "clr-white": withOpacityValue("--clr-white"),
       },
+
       backgroundImage: {
+        // Icons
+        arrow: "url('/assets/shared/icon-arrow.svg')",
+        close: "url('/assets/shared/icon-close.svg')",
+        hamburger: "url('/assets/shared/icon-hamburger.svg')",
+        logo: "url('/assets/shared/logo.svg')",
+
         // Home
         "home-mobile": "url('/assets/home/background-home-mobile.jpg')",
         "home-tablet": "url('/assets/home/background-home-tablet.jpg')",
@@ -57,5 +84,14 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant("optional", "&:optional");
+      addVariant("hocus", ["&:hover", "&:focus"]);
+      addVariant("supports-grid", "@supports (display: grid)");
+      addVariant("aria-expanded", ['&[aria-expanded="true"]']);
+      addVariant("aria-selected", ['&[aria-selected="true"]']);
+      addVariant("data-visible", ['&[data-visible="true"]']);
+    }),
+  ],
 };
