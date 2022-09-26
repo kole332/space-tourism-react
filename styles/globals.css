@@ -8,6 +8,10 @@
   --clr-white: 0 0% 100%;
 }
 
+.active-tab[data-hidden="true"] {
+  display: none;
+}
+
 @layer base {
   body {
     @apply main-clr bg-clr-dark min-h-screen text-clr-white;
@@ -16,7 +20,19 @@
 
 @layer components {
   .home {
-    @apply bg-home-mobile sm:bg-home-tablet md:bg-home-desktop bg-no-repeat bg-[center_bottom] sm:bg-[center_center] bg-cover;
+    @apply bg-home-mobile sm:bg-home-tablet md:bg-home-desktop bg-no-repeat bg-[bottom_center] sm:bg-[center_center] bg-cover;
+  }
+
+  .destination {
+    @apply bg-destination-mobile sm:bg-destination-tablet md:bg-destination-desktop bg-no-repeat bg-[bottom_center] sm:bg-[center_center] bg-cover;
+  }
+
+  .crew {
+    @apply bg-crew-mobile sm:bg-crew-tablet md:bg-crew-desktop bg-no-repeat bg-[bottom_center] sm:bg-[center_center] bg-cover;
+  }
+
+  .technology {
+    @apply bg-technology-mobile sm:bg-technology-tablet md:bg-technology-desktop bg-no-repeat bg-[bottom_center] sm:bg-[center_center] bg-cover;
   }
 
   .primary-header::after {
@@ -32,9 +48,46 @@
     transition: opacity 500ms linear, transform 500ms ease-in-out;
   }
 
-  /* .large-btn:hover::after,
-  .large-btn:focus::after {
-    opacity: 1;
-    transform: scale(1.5);
-  } */
+  .grid-container {
+    column-gap: var(--container-gap, 2rem);
+    grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(
+        2rem,
+        1fr
+      );
+    text-align: left;
+  }
+
+  .grid-container--destination {
+    --flow-space: 2rem;
+    grid-template-areas:
+      "title"
+      "image"
+      "tabs"
+      "content";
+  }
+
+  .grid-container--destination-md {
+    align-content: start;
+    justify-items: start;
+    grid-template-areas:
+      ". title title ."
+      ". image tabs ."
+      ". image content .";
+  }
+
+  .grid-container--destination > .title {
+    grid-area: title;
+  }
+  .grid-container--destination > picture {
+    grid-area: image;
+    align-self: start;
+  }
+
+  .grid-container--destination > .tab-list {
+    grid-area: tabs;
+  }
+
+  .grid-container--destination > .destination-info {
+    grid-area: content;
+  }
 }

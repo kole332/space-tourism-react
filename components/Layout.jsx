@@ -16,7 +16,7 @@ function Header(props) {
   }
 
   return (
-    <header className="flex justify-between items-center md:pt-6 md:after:content-[''] md:after:block md:after:relative md:after:h-[1px] md:after:w-full md:after:-mr-10 md:after:bg-clr-white md:after:bg-opacity-25 md:after:order-1">
+    <header className="flex justify-between items-center max-w-screen-2xl md:pt-6 md:after:content-[''] md:after:block md:after:relative md:after:h-[1px] md:after:w-full md:after:-mr-10 md:after:bg-clr-white md:after:bg-opacity-25 md:after:order-1">
       <div>
         <img
           className="logo my-6 mx-[clamp(1.5rem,5vw,5rem)] self-start sm:self-center"
