@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Home(props) {
+export default function Home() {
   React.useEffect(() => {
     document.querySelector("body").classList.value = "home";
     const active = document.querySelector('[aria-selected="home"]');
