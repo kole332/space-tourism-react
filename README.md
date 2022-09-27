@@ -31,6 +31,7 @@ Users should be able to:
 ![Homepage](screenshots/index-preview.png)
 
 ![Destinations](screenshots/destination-preview.png)
+![Crew](screenshots/crew-preview.png)
 
 ### Links
 
