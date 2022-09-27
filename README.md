@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/kole332/space-tourism-react](https://github.com/kole332/space-tourism-react)
+- Live Site URL: [https://space-tourism-react-flax.vercel.app](https://space-tourism-react-flax.vercel.app)
 
 ## My process
 
@@ -121,4 +121,4 @@ Despite being written with poor code, I've completed index and destination pages
 
 ## Acknowledgments
 
-This is a project from Frontend Mentor's [Space tourism website](). I came across this project on freecodecamp's video lesson [Create a Design System with CSS]() by Kevin Powell. After completing the project in html, css and js, I'm rebuilding it using Reactjs, Nextjs and Tailwindcss.
+I came across this project on freecodecamp's video lesson [Create a Design System with CSS](https://youtu.be/lRaL-8qZ0mM) by Kevin Powell. After completing the project in html, css and js, I'm rebuilding it using Reactjs, Nextjs and Tailwindcss.

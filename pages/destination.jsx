@@ -26,7 +26,7 @@ function Destination(props) {
           data-hidden={tab.name.toLowerCase() !== activeTab}
           className="active-tab flex my-10 justify-self-center msm:max-w-[65%] md:max-w-[80%] md:my-auto md:items-center md:justify-self-start"
         >
-          <img src={tab.images.png} alt={`${tab.name}-image`} />
+          <img src={tab.images.png} alt={`${tab.name} image`} />
           <source srcSet={tab.images.webp} type="webp" />
         </picture>
       ))}

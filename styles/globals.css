@@ -90,4 +90,49 @@
   .grid-container--destination > .destination-info {
     grid-area: content;
   }
+
+  /* crew specific */
+  .grid-container--crew {
+    --flow-space: 2rem;
+    grid-template-areas:
+      "title"
+      "image"
+      "tabs"
+      "content";
+  }
+
+  .grid-container--crew-sm {
+    /* align-content: start;
+    justify-items: start; */
+    grid-template-areas:
+      "title"
+      "content"
+      "tabs"
+      "image";
+  }
+
+  .grid-container--crew-md {
+    /* align-content: start;
+    justify-items: start; */
+    grid-template-areas:
+      ". title title ."
+      ". content image ."
+      ". tabs image .";
+  }
+
+  .grid-container--crew > .title {
+    grid-area: title;
+  }
+  .grid-container--crew > picture {
+    grid-area: image;
+    align-self: start;
+  }
+
+  .grid-container--crew > .tab-list {
+    grid-area: tabs;
+  }
+
+  .grid-container--crew > .crew-info {
+    grid-area: content;
+  }
 }
