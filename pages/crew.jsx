@@ -1,3 +1,8 @@
+// Copyright (c) 2022 Dayal Moirangthem
+//
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
 import React from "react";
 
 export default function Crew(props) {
@@ -14,7 +19,7 @@ export default function Crew(props) {
   }, []);
 
   return (
-    <div className="px-8 grid md:grid-container grid-container--crew sm:grid-container--crew-sm md:grid-container--crew-md justify-center justify-items-center text-center gap-4 md:justify-items-start">
+    <main className="px-8 grid md:grid-container grid-container--crew sm:grid-container--crew-sm md:grid-container--crew-md justify-center justify-items-center text-center gap-4 md:justify-items-start">
       <h1 className="title font-sans-cond tracking-[.2em] text-lg uppercase sm:text-2xl sm:mt-8">
         <span className="font-bold text-clr-white text-opacity-40">02</span>{" "}
         Meet your crew
@@ -58,6 +63,6 @@ export default function Crew(props) {
           <p className="max-w-[50ch]">{crew.bio}</p>
         </article>
       ))}
-    </div>
+    </main>
   );
 }

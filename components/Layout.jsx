@@ -1,3 +1,8 @@
+// Copyright (c) 2022 Dayal Moirangthem
+//
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
 import React, { useState } from "react";
 
 export default function Layout(props) {

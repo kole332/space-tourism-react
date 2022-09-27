@@ -1,3 +1,8 @@
+// Copyright (c) 2022 Dayal Moirangthem
+//
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
 const plugin = require("tailwindcss/plugin");
