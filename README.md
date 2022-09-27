@@ -110,9 +110,9 @@ Despite being written with poor code, I've completed index and destination pages
 
 ### Useful resources
 
-- [Reactjs docs](https://www.reactjs.org) - Provides extensive documentation on Reactjs library.
-- [Tailwindcss docs](https://www.tailwindcss.org) - For everything related to tailwindcss.
-- [Nextjs docs](https://www.nextjs.org) - This is what you need for nextjs.
+- [Reactjs docs](https://reactjs.org/) - Provides extensive documentation on Reactjs library.
+- [Tailwindcss docs](https://tailwindcss.com) - For everything related to tailwindcss.
+- [Nextjs docs](https://nextjs.org/) - This is what you need for nextjs.
 - [React for Beginners](https://www.youtube.com/freecodecamp) - Thank you Bob Ziroll, Scrimba and Freecodecamp for this react lesson (link update needed)
 
 ## Author
@@ -121,4 +121,4 @@ Despite being written with poor code, I've completed index and destination pages
 
 ## Acknowledgments
 
-This is a project from Frontend Mentor's [Space tourism website](). I came across this project on freecodecamp's video lesson [Create a Design System with CSS]() by Kevin Powell. After completing the project in html, css and js, I'm rebuilding it using Reactjs, Nextjs and Tailwindcss.
+I came across this project on freecodecamp's video lesson [Create a Design System with CSS](https://youtu.be/lRaL-8qZ0mM) by Kevin Powell. After completing the project in [html, css and js](), I'm rebuilding it using Reactjs, Nextjs and Tailwindcss.
