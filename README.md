@@ -113,7 +113,7 @@ Despite being written with poor code, I've completed index and destination pages
 - [Reactjs docs](https://reactjs.org/) - Provides extensive documentation on Reactjs library.
 - [Tailwindcss docs](https://tailwindcss.com) - For everything related to tailwindcss.
 - [Nextjs docs](https://nextjs.org/) - This is what you need for nextjs.
-- [React for Beginners](https://www.youtube.com/freecodecamp) - Thank you Bob Ziroll, Scrimba and Freecodecamp for this react lesson (link update needed)
+- [React for Beginners](https://www.youtube.com/watch?v=bMknfKXIFA8) - Thank you Bob Ziroll, Scrimba and Freecodecamp for this react lesson
 
 ## Author
 
