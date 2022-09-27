@@ -31,14 +31,14 @@ function Header(props) {
       <button
         onClick={handleToggle}
         aria-expanded={toggle}
-        className="toggle-btn msm:block h-6 w-8 z-20 bg-hamburger bg-center bg-no-repeat absolute top-8 right-6 aria-expanded:bg-close sm:hidden transition-opacity"
+        className="toggle-btn msm:block h-6 w-8 z-50 bg-hamburger bg-center bg-no-repeat absolute top-8 right-6 aria-expanded:bg-close sm:hidden transition-opacity"
       >
         <span className="sr-only">Menu</span>
       </button>
       <nav className="md:order-2">
         <ul
           data-visible={toggle}
-          className="flex bg-clr-white bg-opacity-5 backdrop-blur-lg msm:flex-col msm:gap-1 msm:pt-24 msm:px-8 msm:w-[70vw] msm:fixed msm:top-0 msm:right-0 msm:h-full msm:translate-x-full msm:data-visible:translate-x-0 transition-transform sm:px-[clamp(1rem,_7vw,_5rem)] sm:gap-8"
+          className="flex bg-clr-white bg-opacity-5 backdrop-blur-2xl z-20 msm:flex-col msm:gap-1 msm:pt-24 msm:px-8 msm:w-[70vw] msm:fixed msm:top-0 msm:right-0 msm:h-full msm:translate-x-full msm:data-visible:translate-x-0 transition-transform sm:px-[clamp(1rem,_7vw,_5rem)] sm:gap-8"
         >
           {props.navigation.map((nav) => (
             <li
@@ -59,7 +59,9 @@ function Header(props) {
               </a>
             </li>
           ))}
-          <li className="flex self-center items-center mt-auto mb-8 px-4 py-1 border border-clr-light border-opacity-40 rounded text-clr-light text-opacity-80 bg-clr-dark bg-opacity-10 hover:border-transparent hover:text-clr-white hover:bg-clr-light hover:bg-opacity-10 backdrop-blur-3xl sm:hidden">
+
+          {/* testing code */}
+          {/* <li className="flex self-center items-center mt-auto mb-8 px-4 py-1 border border-clr-light border-opacity-40 rounded text-clr-light text-opacity-80 bg-clr-dark bg-opacity-10 hover:border-transparent hover:text-clr-white hover:bg-clr-light hover:bg-opacity-10 backdrop-blur-3xl sm:hidden">
             <a href="/about">About us </a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +80,7 @@ function Header(props) {
                 d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"
               />
             </svg>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

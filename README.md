@@ -29,9 +29,9 @@ Users should be able to:
 ### Screenshots
 
 ![Homepage](screenshots/index-preview.png)
-
 ![Destinations](screenshots/destination-preview.png)
 ![Crew](screenshots/crew-preview.png)
+![Technology](screenshots/technology-preview.png)
 
 ### Links
 
@@ -122,4 +122,4 @@ Despite being written with poor code, I've completed index and destination pages
 
 ## Acknowledgments
 
-I came across this project on freecodecamp's video lesson [Create a Design System with CSS](https://youtu.be/lRaL-8qZ0mM) by Kevin Powell. After completing the project in [html, css and js](), I'm rebuilding it using Reactjs, Nextjs and Tailwindcss.
+I came across this project on freecodecamp's video lesson [Create a Design System with CSS](https://youtu.be/lRaL-8qZ0mM) by Kevin Powell. After completing the project in html, css and js, I'm rebuilding it using Reactjs, Nextjs and Tailwindcss.

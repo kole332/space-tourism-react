@@ -20,7 +20,7 @@ function Destination(props) {
 
   return (
     <main className="grid grid-container--destination items-center px-8 md:grid-container md:grid-container--destination-md ">
-      <h1 className="title uppercase font-sans-cond tracking-[.3em] text-center sm:text-xl sm:tracking-[.2em]">
+      <h1 className="title uppercase font-sans-cond tracking-[.3em] text-center sm:text-xl sm:tracking-[.2em] sm:mt-8">
         <span className="text-clr-white text-opacity-30 font-bold">01</span>{" "}
         Pick your destination
       </h1>
@@ -67,13 +67,17 @@ function Destination(props) {
               <p className="font-sans-cond text-lg uppercase tracking-wide sm:mb-2">
                 Avg. distance
               </p>
-              <p className="font-serif text-3xl sm:text-4xl">{tab.distance}</p>
+              <p className="font-serif text-3xl sm:text-4xl uppercase">
+                {tab.distance}
+              </p>
             </div>
             <div>
               <p className="font-sans-cond text-lg uppercase tracking-wide sm:mb-2">
                 Est. travel time
               </p>
-              <p className="font-serif text-3xl sm:text-4xl">{tab.travel}</p>
+              <p className="font-serif text-3xl sm:text-4xl uppercase">
+                {tab.travel}
+              </p>
             </div>
           </div>
         </article>

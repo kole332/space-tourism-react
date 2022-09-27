@@ -142,4 +142,39 @@
   .grid-container--crew > .crew-info {
     grid-area: content;
   }
+
+  .grid-container--technology {
+    grid-template-columns: minmax(1rem, 1fr) minmax(0, 5rem) minmax(0, 35rem) minmax(
+        0,
+        30rem
+      );
+    grid-template-areas:
+      ". title title . "
+      ". tabs content image";
+  }
+
+  .grid-container--technology > .title {
+    grid-area: title;
+    justify-self: start;
+  }
+
+  .grid-container--technology > .number-tab {
+    /* --gap: 2rem; */
+    flex-direction: column;
+    align-self: center;
+    grid-area: tabs;
+  }
+
+  .grid-container--technology > picture {
+    max-width: 90%;
+    /* margin-left: auto; */
+    justify-self: end;
+    grid-area: image;
+    align-self: center;
+  }
+
+  .grid-container--technology > .technology-info {
+    grid-area: content;
+    align-self: center;
+  }
 }
