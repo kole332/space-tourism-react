@@ -110,10 +110,10 @@ Despite being written with poor code, I've completed index and destination pages
 
 ### Useful resources
 
-- [Reactjs docs](https://www.reactjs.org) - Provides extensive documentation on Reactjs library.
-- [Tailwindcss docs](https://www.tailwindcss.org) - For everything related to tailwindcss.
-- [Nextjs docs](https://www.nextjs.org) - This is what you need for nextjs.
-- [React for Beginners](https://www.youtube.com/freecodecamp) - Thank you Bob Ziroll, Scrimba and Freecodecamp for this react lesson (link update needed)
+- [Reactjs docs](https://reactjs.org/) - Provides extensive documentation on Reactjs library.
+- [Tailwindcss docs](https://tailwindcss.com) - For everything related to tailwindcss.
+- [Nextjs docs](https://nextjs.org/) - This is what you need for nextjs.
+- [React for Beginners](https://www.youtube.com/watch?v=bMknfKXIFA8) - Thank you Bob Ziroll, Scrimba and Freecodecamp for this react lesson
 
 ## Author
 
